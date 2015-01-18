@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ListTableViewDataSource : NSObject
+@interface ListTableViewDataSource : NSObject <UITableViewDataSource>
+
+- (void)registerTableView:(UITableView *)tableView;
 
 @end
